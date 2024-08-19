@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #2C3E50;
+    color: #fff;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+}
+
+#menu-icon{
+    font-size: 2.2rem;
+    color: var(--text-color);
+    display: none;
+}
+
+.social{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.social a{
+    color: white;
+}
+
+.container{
+    padding: 10px 5%;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #00B87B;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 18%;
+    font-size: 30px;
+}
+
+.home{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-text h1{
+    margin-bottom: 20px;
+}
+
+.p{
+    width: 80%;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.btn{
+    color: white;
+    text-decoration: none;
+}
+
+.profile-img img{
+    margin-top: 40%;
+    width: 35vw;
+    border-radius: 30px;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+.name{
+    color: #00B87B;
+}
+
+.auto-type{
+    width: 30%;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.2em solid white;
+    animation: typing 3s steps(20,end) infinite;
+    margin-bottom: 20px;
+}
+
+@keyframes typing {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 30%;
+    }
+}
+/*--------------about-------------*/
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col1{
+    flex-basis: 35%;
+}
+
+.about-col1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col2{
+    flex-basis: 60%;
+}
+
+.title1{
+    font-size: 60px;
+    color: white;
+    font-weight: 600;
+}
+
+.p1{
+    margin-top: 30px;
+    font-size: 18px;
+    color: white;
+    line-height: 30px;
+}
+
+.tab-title{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #00B87B;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-content{
+    display: flex;
+    justify-content: left;
+    gap: 120px;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.t-skills , .s-skills {
+    margin: 10px 0px 0px 40px;
+    line-height: 30px;
+}
+
+.tab-content1 p , .tab-content2 p{
+    font-size: 20px;
+    color: #00B87B;
+}
+
+.tab-c ul li{
+    font-size: 18px;
+    list-style: none;
+    margin: 10px 0;
+    color: white;
+}
+
+.tab-c ul li span{
+    color: #00B87B;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents::after{
+    transition: 0.5s;
+}
+
+.tab-contents.active-tab::after{
+    width: 100%;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+/*-------------Projects-----------*/
+#projects{
+    padding: 30px 0;
+}
+
+.title2{
+    font-size: 60px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.project-list div{
+    background: #314355;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s , transform 0.5s;
+}
+
+.project-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.project-list div a i{
+    font-size: 13px;
+}
+
+.project-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.project-list div p{
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.project-list div a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.project-list div:hover{
+    background: #02ad74;
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 15px rgb(48, 46, 46);
+}
+
+/*--------------about-------------*/
+
+.title3{
+    font-size: 60px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.contact_me{
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    width: 900px;
+    height: 500px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+}
+
+form{
+    display: block;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(80%);
+    flex-direction: column;
+    display: flex;
+    gap: 5px;
+}
+
+label{
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+}
+
+.mail{
+    background: rgba(255, 255, 255, 0.3);
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    padding: 0px 20px;
+    border: none;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 15px;
+}
+
+button{
+    background: rgb(45, 126, 231);
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    margin: 10px 0px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: opacity;
+    margin-top: 50px;
+}
+
+button:active{
+    opacity: 0.8;
+}
+
+.des{
+    background: rgba(255, 255, 255, 0.3);
+    height: 100px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    font-size: 15px;
+}
+
+.highlight{
+    color: #00B87B;
+}
