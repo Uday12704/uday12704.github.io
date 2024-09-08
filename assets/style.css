@@ -49,8 +49,8 @@ body{
     text-decoration: none;
     margin: 30px 15px 30px 0;
     opacity: 0;
-    animation: slideRight 0.5s ease forwards;
-    animation-delay: 1s;
+    animation: slideLeft 0.5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
 }
 
 .social a:hover{
@@ -76,14 +76,14 @@ nav ul li{
     margin: 20px 20px;
     opacity: 0;
     animation: slideTop 0.5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
 }
 
 nav ul li a{
     color: white;
     text-decoration: none;
     font-size: 20px;
-    position: relative;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 nav ul li a::after{
@@ -121,7 +121,7 @@ nav ul li a:hover::after{
 .header-text h2{
     opacity: 0;
     animation: slideRight 0.5s ease forwards;
-    animation-delay: 1s;
+    animation-delay: 0.7s;
 }
 
 .header-text h3 span{
@@ -131,7 +131,7 @@ nav ul li a:hover::after{
 .header-text h3{
     margin-bottom: 30px;
     opacity: 0;
-    animation: slideBottom 0.5s ease forwards;
+    animation: slideTop 0.5s ease forwards;
     animation-delay: 0.7s;
 }
 
@@ -142,7 +142,7 @@ nav ul li a:hover::after{
     margin-bottom: 20px;
     opacity: 0;
     animation: slideLeft 0.5s ease forwards;
-    animation-delay: 1s;
+    animation-delay: 0.7s;
 }
 
 .btn{
@@ -155,8 +155,9 @@ nav ul li a:hover::after{
     text-decoration: none;
     color: #222f3c;
     font-weight: 600;
+    box-shadow: 0 0 5px #00B87B, 0 0 25px #00B87B;
     opacity: 0;
-    animation: slideRight 0.5s ease forwards;
+    animation: slideTop 0.5s ease forwards;
     animation-delay: 1s;
 }
 
@@ -165,9 +166,9 @@ nav ul li a:hover::after{
 }
 
 .profile-img img{
-    margin-top: 40%;
-    width: 35vw;
-    border-radius: 50px;
+    margin-top: 30%;
+    width: 30vw;
+    border-radius: 50%;
     box-shadow: 0 0 25px #00B87B, 0 0 50px #00B87B, 0 0 100px #00B87B, 0 0 200px #00B87B;
     opacity: 0;
     animation: slideLeft 0.5s ease forwards;
@@ -257,8 +258,13 @@ nav ul li a:hover::after{
 }
 
 .about-col1 img{
-    width: 100%;
-    border-radius: 15px;
+    margin-top: 18%;
+    width: 28vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px #00B87B, 0 0 50px #00B87B, 0 0 100px #00B87B, 0 0 200px #00B87B;
+    opacity: 0;
+    animation: slideRight 0.5s ease forwards;
+    animation-delay: 0.7s;
 }
 
 .about-col2{
@@ -269,6 +275,9 @@ nav ul li a:hover::after{
     font-size: 60px;
     color: white;
     font-weight: 600;
+    opacity: 0;
+    animation: slideBottom 0.5s ease forwards;
+    animation-delay: 0.7s;
 }
 
 .p1{
@@ -276,6 +285,9 @@ nav ul li a:hover::after{
     font-size: 18px;
     color: white;
     line-height: 30px;
+    opacity: 0;
+    animation: slideLeft 0.5s ease forwards;
+    animation-delay: 1s;
 }
 
 .tab-title{
@@ -290,6 +302,9 @@ nav ul li a:hover::after{
     color: white;
     cursor: pointer;
     position: relative;
+    opacity: 0;
+    animation: slideTop 0.5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
 }
 
 .tab-links::after{
@@ -308,22 +323,10 @@ nav ul li a:hover::after{
     width: 50%;
 }
 
-.tab-content{
-    display: flex;
-    justify-content: left;
-    gap: 120px;
-    flex-wrap: wrap;
-    color: white;
-}
-
-.t-skills , .s-skills {
-    margin: 10px 0px 0px 40px;
-    line-height: 30px;
-}
-
-.tab-content1 p , .tab-content2 p{
-    font-size: 20px;
-    color: #00B87B;
+.tab-c{
+    opacity: 0;
+    animation: slideTop 0.5s ease forwards;
+    animation-delay: 2s;
 }
 
 .tab-c ul li{
@@ -353,7 +356,7 @@ nav ul li a:hover::after{
     display: block;
 }
 
-/*-------------Projects-----------*/
+/*-----------------------------------------Projects------------------------------------*/
 #projects{
     padding: 30px 0;
 }
@@ -363,6 +366,9 @@ nav ul li a:hover::after{
     color: white;
     font-weight: 600;
     text-align: center;
+    opacity: 0;
+    animation: slideBottom 0.5s ease forwards;
+    animation-delay: 0.7s;
 }
 
 .project-list{
@@ -373,17 +379,20 @@ nav ul li a:hover::after{
 }
 
 .project-list div{
-    background: #314355;
+    background: transparent;
+    border: 1px solid #00B87B;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
+    box-shadow: 0 0 25px #00B87B;
     transition: background 0.5s , transform 0.5s;
 }
 
 .project-list div i{
     font-size: 50px;
     margin-bottom: 30px;
+    color: #00B87B;
 }
 
 .project-list div a i{
@@ -402,18 +411,33 @@ nav ul li a:hover::after{
     line-height: 18px;
 }
 
-.project-list div a{
+.learn-more{
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 12px 20px;
+    background: #00B87B;
+    border-radius: 40px;
     text-decoration: none;
-    color: white;
-    font-size: 15px;
     font-weight: 600;
+    box-shadow: 0 0 20px #00B87B;
+}
+
+.project-list div a{
+    margin-top: 20px;
+    text-decoration: none;
+    color: #222f3c;
+    font-size: 14px;
     display: inline-block;
 }
 
+.learn-more:hover{
+    box-shadow: 0 0 30px #00B87B, 0 0 30px #00B87B;
+}
+
 .project-list div:hover{
-    background: #02ad74;
     transform: translateY(-10px);
-    box-shadow: 5px 5px 15px rgb(48, 46, 46);
+    box-shadow: 0 0 25px #00B87B, 0 0 50px #00B87B;
 }
 
 /*--------------about-------------*/
