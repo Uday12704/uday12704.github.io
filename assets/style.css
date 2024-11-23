@@ -175,6 +175,22 @@ nav ul li a:hover::after{
     animation-delay: 0.7s;
 }
 
+.profile-img{
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2.2rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .name{
     color: #00B87B;
 }
