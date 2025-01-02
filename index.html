@@ -4,119 +4,247 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-          <nav class="navbar">
-            <a class="logo" href="#"><span class="highlight">P</span>ortfolio</a>
-            <i class="fa-solid fa-bars" id="menu-icon"></i>
-            <ul>
-              <li style="--i:1"><a href="#" class="active">Home</a></li>
-              <li style="--i:2"><a href="#about">About</a></li>
-              <li style="--i:3"><a href="#projects">Projects</a></li>
-              <li style="--i:4"><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-            <div class="home">
-                <div class="header-text">
-                    <h1>Hello, It's me</h1>
-                    <h2 class="name">Uday R</h2>
-                    <h3>and I'm a <span class="auto-type"></span></h3>
-                    <p class="p">I'm a 3rd-year B.Tech student specializing in Computer Science and Business Systems (CSBS), I am passionate about coding and continually learning the latest technologies.
-                    </p>
-                    <div class="social">
-                        <a href="https://www.instagram.com/uday_patel_127/" target="_blank" style="--i:5"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/udaypatel07" target="_blank" style="--i:6"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/Uday12704" target="_blank" style="--i:7"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                    <a href="assets/CV Resume.pdf" download="CV Resume.pdf" class="btn">Download CV</a>
-                </div>
-                <div class="profile-img">
-                    <img src="assets/img/2.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-----------------------------------------------about------------------------------------------>
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col1">
-                    <img src="assets/img/2.jpg">
-                </div>
-                <div class="about-col2">
-                    <h1 class="title1"><span class="highlight">A</span>bout me</h1>
-                    <p class="p1">As a 3rd-year B.Tech student specializing in Computer Science and Business Systems (CSBS), I am passionate about coding and continually learning the latest technologies. My proficiency in languages such as Python, C, Java, SQL, HTML, CSS, and JavaScript reflects my dedication to building robust and innovative solutions.
-                        I have a keen interest in web development and data analytics, and I am driven by the desire to transform data into actionable insights and craft seamless user experiences on the web. My academic journey, combined with hands-on project work, has equipped me with the skills to tackle real-world challenges.
-                        Eager to explore new opportunities and connect with professionals who share my enthusiasm for technology and innovation.</p>
+    <header class="header">
+        <a href="#" class="logo"><span>P</span>ortfolio</a>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+                
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#project">Projects</a>
+            <a href="#skill">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-                    <div class="tab-title">
-                        <p class="tab-links active-link" style="--i:8" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" style="--i:9" onclick="opentab('education')">Education</p>
-                    </div>
-                    
-                    <div class="tab-contents tab-c active-tab" id="experience">
-                        <ul>
-                            <li><span>2024</span><br>Data Science internship at <span class="highlight">Cognifyz Technologies</span></li>
-                            <li><span>2024</span><br>CRM trainings internship at <span class="highlight">Dovyo Technologies</span></li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents tab-c" id="education">
-                        <ul>
-                            <li><span>2022 - current</span><br>B.Tech Computer Science and Business Systems</li>
-                        </ul>
-                    </div>
-                </div>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hello, It's me</h3>
+            <h2 class="name"><span>Uday R</span></h1>
+            <h3>and I'm a <span class="auto-type"></span></h3>
+            <p class="p">I'm a 3rd-year B.Tech student specializing in Computer Science and Business Systems (CSBS), I am passionate about coding and continually learning the latest technologies.
+            </p>
+            <div class="social-media">
+                <a href="https://www.instagram.com/uday_patel_127/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/udaypatel07" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Uday12704" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="assets/CV Resume.pdf" download="CV Resume.pdf" class="btn">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="assets/img/2.jpg" alt="">
+        </div>
+    </section>
+
+    <!--------------ABOUT----------->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="assets/img/2.jpg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Frontend Developer</h3>
+            <p>As a 3rd-year B.Tech student specializing in Computer Science and Business Systems (CSBS), I am passionate about coding and continually learning the latest technologies. My proficiency in languages such as Python, C, Java, SQL, HTML, CSS, and JavaScript reflects my dedication to building robust and innovative solutions.
+            I have a keen interest in web development and data analytics, and I am driven by the desire to transform data into actionable insights and craft seamless user experiences on the web. My academic journey, combined with hands-on project work, has equipped me with the skills to tackle real-world challenges.
+            Eager to explore new opportunities and connect with professionals who share my enthusiasm for technology and innovation.</p>
+            
+            <a href="#" class="btn">Read more</a>
+        </div>
+    </section>
+
+    <!----------------------------PROJECTS----------------------->
+    <section class="project" id="project">
+        <h2 class="heading">My <span>Project</span></h2>
+
+        <div class="project-container">
+            <div class="project-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web development</h3>
+                <p>Build a Trichy-Cleaning-Website which is based on E-commerce  housekeeping products.</p><br><br>
+                <a href="https://uday12704.github.io/Trichy-Cleaning-Website" target="_blank" class="btn">Learn more</a>
+            </div>
+
+            <div class="project-box">
+                <i class="fa-solid fa-robot"></i>
+                <h3>Stuvebot</h3>
+                <p>The project aims to develop a chatbot capable of understanding natural language inputs from users and providing appropriate responses.</p><br>
+                <a href="https://github.com/Uday12704/career_counselling" target="_blank" class="btn">Learn more</a>
+            </div>
+
+            <div class="project-box">
+                <i class='bx bxs-cctv'></i>
+                <h3>Surveillance-System</h3>
+                <p>This system uses a live webcam feed to monitor a restricted area, detecting people in a defined ROI. Alerts are issued, and detection events are logged.</p>
+                <a href="https://github.com/Uday12704" target="_blank" class="btn">Learn more</a>
             </div>
         </div>
-    </div>
-    <!------------------------------------Projects---------------------------------->
-    <div id="projects">
-        <div class="container">
-            <h1 class="title2"><span class="highlight">P</span>rojects</h1>
-            <div class="project-list">
-                <div style="--i:9">
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web design</h2>
-                    <p>Build a Trichy-Cleaning-Website which is based on E-commerce  housekeeping products</p>
-                    <a href="https://uday12704.github.io/Trichy-Cleaning-Website/" target="_blank" class="learn-more">Learn more</a>
+    </section>
+
+    <!-----------------------------SKILLS------------------------------>
+    
+    <section class="skill" id="skill">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <h1 class="skill-heading"><span>T</span>echnical <span>S</span>kills</h1>
+        <div class="skill-container">
+            <div class="radial-bar rad-bar1">
+                <div class="outer">
+                    <div class="inner">
+                        <div class="skill-box">
+                            <i style="color: #c95d2e;" class='bx bxl-html5'></i>
+                            <div id="pert-1">85%</div>
+                            <p class="skill-name">HTML</p>
+                        </div>
+                    </div>
                 </div>
-                <div style="--i:10">
-                    <i class="fa-solid fa-robot"></i>
-                    <h2>Stuvebot</h2>
-                    <p>The project aims to develop a chatbot capable of understanding natural language inputs from users and providing appropriate responses.</p>
-                    <a href="https://github.com/Uday12704/Career-counselling" target="_blank" class="learn-more">Learn more</a>
+
+                <svg width="400px" height="300px">
+                    <defs>
+                        <linearGradient id="linearGradient">
+                            <stop offset="0%" stop-color="var(--main-color)"></stop>
+                            <stop offset="100%" stop-color="#0F94A8"></stop>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="200" cy="150" r="103"></circle>
+                </svg>
+            </div>
+            
+            <div class="radial-bar rad-bar2">
+                <div class="outer">
+                    <div class="inner">
+                        <div class="skill-box">
+                            <i style="color: #147bbc;" class='bx bxl-css3'></i>
+                            <div id="pert-2">85%</div>
+                            <p class="skill-name">CSS</p>
+                        </div>
+                    </div>
                 </div>
-                <div style="--i:11">
-                    <i class="fa-solid fa-gamepad"></i>
-                    <h2>Simple game</h2>
-                    <p>Build a simple Rock Paper Scissor game</p>
-                    <a href="try2.html" target="_blank" class="learn-more">Learn more</a>
+
+                <svg width="400px" height="300px">
+                    <defs>
+                        <linearGradient id="linearGradient">
+                            <stop offset="0%" stop-color="var(--main-color)"></stop>
+                            <stop offset="100%" stop-color="var(--main-color)"></stop>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="200" cy="150" r="103"></circle>
+                </svg>
+            </div>
+            
+            <div class="radial-bar rad-bar3">
+                <div class="outer">
+                    <div class="inner">
+                        <div class="skill-box">
+                            <i style="color: #b0bc1e;" class='bx bxl-javascript'></i>
+                            <div id="pert-3">65%</div>
+                            <p class="skill-name">JavaScript</p>
+                        </div>
+                    </div>
                 </div>
+
+                <svg width="400px" height="300px">
+                    <defs>
+                        <linearGradient id="linearGradient">
+                            <stop offset="0%" stop-color="var(--main-color)"></stop>
+                            <stop offset="100%" stop-color="var(--main-color)"></stop>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="200" cy="150" r="103"></circle>
+                </svg>
+            </div>
+            
+            <div class="radial-bar rad-bar4">
+                <div class="outer">
+                    <div class="inner">
+                        <div class="skill-box">
+                            <i style="color: #1c90d8;" class='bx bxl-python'></i>
+                            <div id="pert-4">75%</div>
+                            <p class="skill-name">Python</p>
+                        </div>
+                    </div>
+                </div>
+
+                <svg width="400px" height="300px">
+                    <defs>
+                        <linearGradient id="linearGradient">
+                            <stop offset="0%" stop-color="var(--main-color)"></stop>
+                            <stop offset="100%" stop-color="var(--main-color)"></stop>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="200" cy="150" r="103"></circle>
+                </svg>
+            </div>
+            
+            <div class="radial-bar rad-bar5">
+                <div class="outer">
+                    <div class="inner">
+                        <div class="skill-box">
+                            <i style="color: #1c90d8;" class='bx bxl-c-plus-plus'></i>
+                            <div id="pert-5">50%</div>
+                            <p class="skill-name">C/C++</p>
+                        </div>
+                    </div>
+                </div>
+
+                <svg width="400px" height="300px">
+                    <defs>
+                        <linearGradient id="linearGradient">
+                            <stop offset="0%" stop-color="var(--main-color)"></stop>
+                            <stop offset="100%" stop-color="var(--main-color)"></stop>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="200" cy="150" r="103"></circle>
+                </svg>
             </div>
         </div>
-    </div>
-    <!------------------------------------------Contact me----------------------------------------->
-    <div id="contact">
-        <div class="container">
-            <h1 class="title3"><span class="highlight">C</span>ontact me</h1>
-            <div class="contact_me">
-                <form>
-                    <label>Name</label>
-                    <input type="text" class="mail" >
-                    <label>Email ID</label>
-                    <input type="text" class="mail" >
-                    <label>Message</label>
-                    <textarea name="TextArea" class="des" spellcheck="true"></textarea>
-                    <button>Submit</button>
-                </form>
+    </section>
+
+    <!-----------------------------Conatact Me------------------------------>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email address">
             </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-----------------------------FOOTER------------------------------>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 @Uday | All Rights Reserved.</p>
         </div>
-    </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
-<script src="https://kit.fontawesome.com/fc64ebb6dd.js" crossorigin="anonymous"></script>
 </html>
