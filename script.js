@@ -110,11 +110,11 @@ ScrollReveal().reveal('.logo', { origin: 'left' ,delay: 500 });
 ScrollReveal().reveal('.navbar, #menu-icon', { origin: 'bottom' ,delay: 500 });
 
 /* delay 1000 */
-ScrollReveal().reveal('.home-content h1, .heading, form', { origin: 'top' });
-ScrollReveal().reveal('.home-content, .home-content h3, .project-container, .about, .conatact form', { origin: 'bottom' });
-ScrollReveal().reveal('.home-content h2,.home-content p, .about-img, .rad-bar4, .rad-bar5', { origin: 'left' });
-ScrollReveal().reveal('.home-img, .about-content h3, .about-content p, .skill-heading, .rad-bar1, .rad-bar2, .rad-bar3', { origin: 'right' });
+ScrollReveal().reveal('.home-content h1, .heading, form', { origin: 'top' ,delay: 500});
+ScrollReveal().reveal('.home-content, .home-content h3, .project-container, .about, .conatact form', { origin: 'bottom' ,delay: 500});
+ScrollReveal().reveal('.home-content h2,.home-content p, .about-img, .rad-bar4, .rad-bar5', { origin: 'left' ,delay: 500});
+ScrollReveal().reveal('.home-img, .about-content h3, .about-content p, .skill-heading, .rad-bar1, .rad-bar2, .rad-bar3', { origin: 'right' ,delay: 500});
 
 /* delay 1500 */
-ScrollReveal().reveal('.social-media', { origin: 'right' ,delay: 1500 });
-ScrollReveal().reveal('.btn', { origin: 'bottom' ,delay: 1500 });
+ScrollReveal().reveal('.social-media', { origin: 'right' ,delay: 1000 });
+ScrollReveal().reveal('.btn', { origin: 'bottom' ,delay: 1000 });
