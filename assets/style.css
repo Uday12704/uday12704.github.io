@@ -216,7 +216,7 @@ span {
 
 .project-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 40px;
     margin-top: 50px;
 }
@@ -302,7 +302,7 @@ span {
     box-shadow: -1px -1px 5px 0 rgb(8, 8, 8), 3px 3px 5px black;
 }
 
-#pert-1, #pert-2, #pert-3, #pert-4, #pert-5 {
+#pert-1, #pert-2, #pert-3, #pert-4, #pert-5, #pert-6 {
     font-size: 2.8rem;
     font-weight: 600;
     color: var(--main-color);
@@ -323,27 +323,32 @@ circle {
 }
 
 .rad-bar1 circle {
-    animation: rad1 1s ease forwards;
+    animation: none;
     animation-delay: 2s;
 }
 
 .rad-bar2 circle {
-    animation: rad2 1s ease forwards;
+    animation: none;
     animation-delay: 2s;
 }
 
 .rad-bar3 circle {
-    animation: rad3 1s ease forwards;
+    animation: none;
     animation-delay: 2s;
 }
 
 .rad-bar4 circle {
-    animation: rad4 1s ease forwards;
+    animation: none;
     animation-delay: 2s;
 }
 
 .rad-bar5 circle {
-    animation: rad5 1s ease forwards;
+    animation: none;
+    animation-delay: 2s;
+}
+
+.rad-bar6 circle {
+    animation: none;
     animation-delay: 2s;
 }
 
@@ -372,6 +377,12 @@ circle {
 }
 
 @keyframes rad5 {
+    100% {
+        stroke-dashoffset: 161.5;
+    }
+}
+
+@keyframes rad6 {
     100% {
         stroke-dashoffset: 323;
     }
