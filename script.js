@@ -150,7 +150,7 @@ ScrollReveal().reveal('.logo', { origin: 'left' ,delay: 500 });
 ScrollReveal().reveal('.navbar, #menu-icon', { origin: 'bottom' ,delay: 500 });
 
 /* delay 1000 */
-ScrollReveal().reveal('.home-content h1, .heading, form', { origin: 'top' ,delay: 500});
+ScrollReveal().reveal('.home-content h1, .heading, form', { origin: 'top' ,delay: 600});
 ScrollReveal().reveal('.home-content, .home-content h3, .project-container, .about, .conatact form', { origin: 'bottom' ,delay: 500});
 ScrollReveal().reveal('.home-content h2,.home-content p, .about-img, .rad-bar4, .rad-bar5, .rad-bar6', { origin: 'left' ,delay: 500});
 ScrollReveal().reveal('.home-img, .about-content h3, .about-content p, .skill-heading, .rad-bar1, .rad-bar2, .rad-bar3', { origin: 'right' ,delay: 500});
