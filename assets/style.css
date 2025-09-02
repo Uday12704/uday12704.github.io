@@ -614,3 +614,30 @@ circle {
         width: 100%;
     }
 }
+
+.hover-letters {
+    display: inline-block;
+    white-space: pre-wrap;
+}
+.hover-letters .char {
+  display: inline-block;
+  transition: transform 220ms cubic-bezier(.2,.8,.2,1), color 220ms ease;
+  will-change: transform, color;
+}
+.hover-letters .char:hover {
+  transform: rotate(10deg) scale(1.2);
+  color: var(--text-color);
+}
+.hover-letters .space {
+    display: inline-block;
+    width: 0.35em; pointer-events: none;
+}
+
+.char:hover {
+    animation: bounce 400ms ease;
+}
+
+@keyframes bounce {
+    0%{transform:translateY(0)}
+    50%{transform:translateY(-12px)}
+}

@@ -6,6 +6,19 @@ var typed = new Typed(".auto-type",{
     loop: true
 });
 
+function splitLetters(el) {
+  const text = el.textContent;
+  el.setAttribute('aria-label', text);
+  el.textContent = '';
+  for (const ch of [...text]) {
+    const span = document.createElement('span');
+    if (ch === ' ') { span.className = 'space'; }
+    else { span.className = 'char'; span.textContent = ch; }
+    el.appendChild(span);
+  }
+}
+document.querySelectorAll('[data-letters]').forEach(splitLetters);
+
 const number1 = document.getElementById("pert-1");
 const number2 = document.getElementById("pert-2");
 const number3 = document.getElementById("pert-3");
